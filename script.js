@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // ===== NAVIGATION =====
 
-function showID(id) {
+function showSection(id) {
   document.querySelectorAll(".section").forEach(function(sec) {
     sec.classList.remove("active");
   });
