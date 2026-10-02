@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Activity</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LANDING PAGE -->
+<div id="landingPage">
+  <div class="landing-shapes">
+    <div class="ls1"></div>
+    <div class="ls2"></div>
+    <div class="ls3"></div>
+  </div>
+  <div class="landing-content">
+    <div class="landing-badge">JavaScript Portfolio</div>
+    <h1 class="landing-title">Learn JavaScript<br><span>Interactively</span></h1>
+    <p class="landing-sub">Hands-on exercises covering core JS concepts — from variables to DOM manipulation.</p>
+    <button id="landingClickMe" class="landing-cta">Click Me to Enter ➜</button>
+  </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="mainApp" style="display:none;">
+
+  <header>PORTFOLIO</header>
+
+  <nav class="menu">
+    <ul>
+      <li><a id="nav-home" class="menu-link active-menu">Home</a></li>
+      <li><a id="nav-about" class="menu-link">About</a></li>
+      <li><a id="nav-activities" class="menu-link">Activities</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="home" class="section active">
+      <div class="card">
+        <h2>Welcome!</h2>
+        <p>
+          This portfolio showcases my understanding of JavaScript fundamentals such as variables, loops, conditionals, functions, and DOM manipulation through interactive and practical activities.
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="card about-container">
+        <div>
+          <p><strong>Name:</strong> Stephen Mark S. Joriza</p>
+          <p><strong>Course:</strong> Bachelor of Science in Computer Science (BSCS)</p>
+          <p><strong>Year Level:</strong> 2nd Year</p>
+          <p><strong>Motto:</strong> PPrograms must be written for people to read, and only incidentally for machines to execute.</p>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="activities" class="section">
+      <div class="activities-layout">
+
+        <aside class="sidebar">
+          <div class="sidebar-title">📚 EXERCISES</div>
+
+          <div class="folder" id="folder2">📁 Exercise 2</div>
+          <ul id="exercise2List" class="folder-list hidden">
+            <li class="activity-item" data-activity="1">Activity 1: Your First JavaScript Output</li>
+            <li class="activity-item" data-activity="2">Activity 2: Variables and Data Types</li>
+            <li class="activity-item" data-activity="3">Activity 3: Simple Calculator</li>
+            <li class="activity-item" data-activity="4">Activity 4: User Input using prompt</li>
+            <li class="activity-item" data-activity="5">Activity 5: Conditional Statements</li>
+            <li class="activity-item" data-activity="6">Activity 6: Loops (Basic)</li>
+            <li class="activity-item" data-activity="7">Activity 7: JavaScript and HTML Interaction</li>
+          </ul>
+
+          <div class="folder" id="folder3">📁 Exercise 3</div>
+          <ul id="exercise3List" class="folder-list hidden">
+            <li class="exercise3-item" data-ex3="1">Activity 1: Change Background Color</li>
+            <li class="exercise3-item" data-ex3="2">Activity 2: Dark Mode Toggle</li>
+            <li class="exercise3-item" data-ex3="3">Activity 3: Add List Item</li>
+            <li class="exercise3-item" data-ex3="4">Activity 4: Remove Paragraph</li>
+            <li class="exercise3-item" data-ex3="5">Activity 5: Character Counter</li>
+            <li class="exercise3-item" data-ex3="6">Activity 6: Addition Calculator</li>
+            <li class="exercise3-item" data-ex3="7">Activity 7: Change Image</li>
+            <li class="exercise3-item" data-ex3="8">Activity 8: Mini To-Do List</li>
+          </ul>
+
+          <div class="folder" id="folder4">📁 Exercise 4</div>
+          <ul id="exercise4List" class="folder-list hidden">
+            <li class="exercise4-item" data-ex4="1">Activity 1: Student Grade Calculator</li>
+          </ul>
+        </aside>
+
+        <div class="card">
+          <h3>Output</h3>
+          <div id="output">Click an activity to see output.</div>
+          <ul id="dynamicList"></ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 | ITE 6 - Application Development and Emerging Technologies | All right reserved!
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
